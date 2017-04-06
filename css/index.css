@@ -1,0 +1,70 @@
+/** ABOUT ME **/
+.flexbox {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#image-container{
+  width: 50vw;
+  height: 100vh;
+  background-image: url("../assets/jenn_table.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about-me {
+  background-color: #AD1457;
+  color: #FFF; 
+	padding: 40px 55px;
+  width: 50vw;
+  box-shadow: 10px 5px 20px rgba(0,0,0,0.19), 3px 6px 6px rgba(0,0,0,0.23);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#about-me article { font-weight: 300; }
+
+#nav-links {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+#about-me a { 
+  border: 5px solid #FCE4EC;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#about-me a:not(:last-child) { margin-right: 20px; }
+
+#about-me a:hover {
+  text-decoration: inherit;
+  border: 5px solid #F8BBD0;
+  color: #FCE4EC;
+}
+
+@media screen and (max-width: 840px) {
+  #about-me {
+    width: 100%;
+    height: 100%;
+    min-width: 450px;
+  }
+
+  #image-container {
+    width: 100%;
+    height: 400px;
+    background-position: 0 10%;
+  }
+
+  .flexbox { display: block; }
+}
+
