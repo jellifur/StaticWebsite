@@ -5,6 +5,11 @@
   display: flex;
 }
 
+h1 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
 #image-container{
   width: 50vw;
   height: 100vh;
@@ -35,10 +40,11 @@
 }
 
 #about-me a { 
-  border: 5px solid #FCE4EC;
-  font-size: 20px;
+  border: 1px solid #FCE4EC;
+  font-size: 19px;
+  font-weight: 300;
   padding: 10px 15px;
-  margin-top: 20px;
+  margin-top: 10px;
   cursor: pointer;
   color: inherit;
   text-decoration: inherit;
@@ -48,8 +54,14 @@
 
 #about-me a:hover {
   text-decoration: inherit;
-  border: 5px solid #F8BBD0;
-  color: #FCE4EC;
+  background-color: #FCE4EC;
+  color: #AD1457;
+}
+
+#smiley {
+  font-weight: 300;
+  text-align: right;
+  margin-right: 27px;
 }
 
 @media screen and (max-width: 840px) {
