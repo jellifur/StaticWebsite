@@ -1,18 +1,16 @@
 body {
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;
   padding: 25px 40px;
-
-  background-color: #FEF9FB;
-  color: #263238;
+  background-color: #FAFAFA;
 }
 
 h1 {
     text-align: center;
     color: #AD1457;
-    font-weight: 300;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 #ux-projects {
@@ -23,12 +21,19 @@ h1 {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   justify-content: center;
+  color: #FFF;
 }
 
 #ux-projects .project {
   margin: 15px;
   margin-top: 20px;
+  background: #AD1457;
+  width: 300px;  
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
+
+#ux-projects .project:hover { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
 
 #ux-projects  a { 
   cursor: pointer;
@@ -36,14 +41,19 @@ h1 {
   text-decoration: inherit;
 }
 
-#ux-projects a:hover { text-decoration: inherit; }
+#ux-projects a:hover { text-decoration: underline; }
+
+#ux-projects .project article { 
+  padding: 0 25px 20px 25px; 
+  height: 130px;
+}
 
 #ux-projects .ux-item {
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
   
   display: -ms-flex;
   display: -webkit-flex;
@@ -51,29 +61,13 @@ h1 {
   align-items: flex-end;
 }
 
-#ux-projects .ux-item:hover { border: 1px solid transparent; }
-
-#ux-projects .ux-item .project-name {
-  text-align: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
-  color: #FFF;
-  padding: 15px 5px;
-}
-
-#post-it { 
-  background-image: url("../assets/pet-post-it.jpeg"); 
-  background-position: 50%;
-}
-
+#post-it { background-image: url("../assets/pet-post-it.jpeg"); }
 #usability { background-image: url("../assets/usability.JPG"); }
+#data-viz { background-image: url("../assets/data-viz.JPG"); }
 
-#data-viz { 
-  background-image: url("../assets/data-viz.JPG"); 
-  background-position: 44%;
-}
-
-#ux-projects article {
-  width: 250px;
-  height: 250px;
+#ux-projects nav {
+  color: #27E693;
+  font-weight: 400;
+  font-size: 19px;
+  padding: 0 25px 20px 25px;
 }

@@ -1,0 +1,58 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #37474F;
+    background-color: #FAFAFA;
+    padding: 15px 30px;
+}
+
+h2 { 
+    color: #AD1457; 
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+#pet-owner {  
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5px 15px 15px 15px;
+}
+
+#pet-owner section { margin-bottom: 25px; }
+
+#pet-owner .team-members {
+    font-size:13px;
+    margin-top: 5px;
+}
+
+#pet-owner .user-research {
+    color: #14AD6A;
+}
+
+#pet-owner nav {
+    top: 40px;
+    right: 330px;
+    background-color: #AD1457;
+    color: #FFF;
+    padding: 15px 30px 20px 30px;
+    position: fixed;
+}
+
+#pet-owner a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
+    line-height: 25px;
+}
+
+#pet-owner a:hover {
+    text-decoration: underline;
+    color: #FCE4EC;
+}
+
+#pet-owner h4 {
+    display: flex;
+    align-items: flex-end;
+}
