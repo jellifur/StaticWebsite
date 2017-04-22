@@ -41,7 +41,6 @@ nav a {
 #nav-sections li:not(:first-child) { padding-left: 8px; }
 
 #nav-sections a:hover,
-#nav-sections a:focus,
 #nav-sections .active a {
     text-decoration: underline;
     color: #FCE4EC;
@@ -51,6 +50,14 @@ nav a:hover {
     text-decoration: none; 
     color: inherit;
 }
+
+nav a:visited,
+nav a:focus { 
+    color: #fff;
+    text-decoration: none; 
+}
+
+#ux-research:hover { color: #FCE4EC; }
 
 /******************************/
 
@@ -66,7 +73,19 @@ h3 {
     display: flex;
 }
 
-#pet-owner {  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+td, th {
+    border: 1px solid #FCE4EC;
+    padding: 8px;
+}
+
+tr:nth-child(even) { background-color: #FDF4F7; }
+
+#ux-project-container {  
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
@@ -75,21 +94,16 @@ h3 {
     padding: 40px 30px 15px 30px;
 }
 
-#pet-owner header {
+#ux-project-container header {
     margin-bottom:30px;
     text-align: center;
 }
 
-#pet-owner section { margin-bottom: 25px; }
+#ux-project-container section { margin-bottom: 25px; }
 
-#pet-owner .team-members {
+#ux-project-container .team-members {
     font-size:13px;
     margin-top: 5px;
 }
 
-#pet-owner .font-weight-300 { font-weight: 300; }
-
-img {
-    max-width: 100%;
-    height: auto;
-}
+#ux-project-container .font-weight-300 { font-weight: 300; }

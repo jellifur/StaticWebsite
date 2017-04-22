@@ -45,12 +45,12 @@ h1 {
 
 #ux-projects .project article { 
   padding: 0 25px 20px 25px; 
-  height: 130px;
+  height: 140px;
 }
 
 #ux-projects .ux-item {
   width: 300px;
-  height: 200px;
+  height: 210px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;

@@ -1,10 +1,10 @@
 $(document).ready(function(){
-    // Cache selectors
     var lastId,
     topMenu = $("#nav-sections"),
     topMenuHeight = topMenu.outerHeight()+40,
-    // All list items
+
     menuItems = topMenu.find("a"),
+
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
         var item = $($(this).attr("href"));
