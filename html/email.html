@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
         <link rel="stylesheet" href="../css/uxprojects.css">
+        <link rel="stylesheet" href="../css/imagepopup.css">
         
         <title>Jenn Chan - Email Usability Test on Mobile Devices</title>
     </head>
@@ -200,8 +201,15 @@
                 </section>
             </article>
         </main>
+
+        <!-- The Modal -->
+        <div id="image-modal" class="modal">
+            <span id="modal-close" onclick="document.getElementById('image-modal').style.display='none'">&times;</span>
+            <img class="modal-content" id="enlarged-image">
+        </div>
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/menuselection.js"></script>
+    <script src="../js/imagepopup.js"></script>
 </html>
