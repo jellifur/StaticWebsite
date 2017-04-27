@@ -109,7 +109,5 @@ tr:nth-child(even) { background-color: #FDF4F7; }
 #ux-project-container .font-weight-300 { font-weight: 300; }
 
 @media only screen and (max-width: 600px) {
-    #ux-project-container {
-        padding: 60px 30px 15px 30px;
-    }
+    #nav-sections { display: none; }
 }
