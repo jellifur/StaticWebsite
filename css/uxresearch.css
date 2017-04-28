@@ -2,7 +2,6 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;
-  padding: 25px 40px;
   background-color: #FAFAFA;
 }
 
@@ -11,9 +10,21 @@ h1 {
     color: #AD1457;
     margin-bottom: 20px;
     font-weight: 400;
+    margin-top: 45px;
 }
 
+#home {
+    position: absolute;
+    color: #FFF;
+    background-color: #AD1457;
+    padding: 10px 15px;
+    top: 30px;
+}
+
+#home .material-icons { font-size: 30px; }
+
 #ux-projects {
+  margin: 25px 40px;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
