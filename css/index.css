@@ -30,7 +30,10 @@ h1 {
   font-size: 16px;
 }
 
-#about-me article { font-weight: 300; }
+#about-me article { 
+  font-weight: 300; 
+  margin-bottom: 20px;
+}
 
 #nav-links {
   display: -ms-flex;
