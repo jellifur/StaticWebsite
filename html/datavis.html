@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../css/uxprojects.css">
+        <link rel="stylesheet" href="../css/imagepopup.css">
+        
+        <title>Jenn Chan - Helping Challenged Pet Owning Seniors</title>
+    </head>
+
+    <body>
+        <nav>
+            <div>
+                <a href="http://jedoublen.com/" style="font-weight:400; font-size:17px; padding-right:10px;">
+                    Jenn Chan
+                </a>
+                <a id="ux-research" href="uxresearch.html">UX Research</a>
+            </div>
+            <ul id="nav-sections">
+                <li class="active"><a href="#initial-investigation">INITIAL INVESTIGATION</a></li> /
+                <li><a href="#redefine">REDEFINING THE PROBLEM</a></li> <!--/-->
+                <!--li><a href="#prototype">##########</a></li-->
+            </ul>
+        </nav>
+
+        <main id="ux-project-container">
+            <article style="max-width: 600px;">
+                <!-- USER RESEARCH -->
+                <section id="initial-investigation">
+                    <header><h2>Visualizing U.S. Education Data</h2>
+                        <div style="font-size:21px;">(Data Visualization at University of Washington)</div>
+                        <div class="team-members">Team Members: Meredith Anderson, Jenn Chan, Sophie Kahan, Vera Ranguelova</div>
+                    </header>
+
+                    <h3><i class="material-icons">insert_chart</i>&nbsp;INITIAL INVESTIGATION</h3>
+
+                    <section>
+                        <h4>BACKGROUND</h4>
+                        At the inception of the project, we reflected upon our own difficulties 
+                        in choosing post-secondary education. We had to consider available financing, 
+                        institutional reputation, distance to home, extracurriculars, choice of programs 
+                        and majors, etc. We wondered whether data, rather than just our parents and 
+                        guidance counselors, could have made this process easier.
+                    </section>
+
+                    <section>
+                        <h4>INITIAL DESIGN QUESTION</h4>
+                        How might we help high school and undergraduate college students make decisions 
+                        for their post-secondary education?
+                    </section>
+
+                    <section>
+                        <h4>TARGET USERS</h4>
+                        High school seniors in the U.S. education system
+                    </section>
+
+                    <section>
+                        <h4>COMPETITIVE ANALYSIS</h4>
+                        <ul>
+                            <li>The College Board</li>
+                            <li>Chegg</li>
+                            <li>Khan Academy</li>
+                            <li>University websites (e.g. admissions.rpi.edu)</li>
+                        </ul>
+                        In summary, these companies and nonprofit organizations offer students articles, 
+                        quizzes and tools to find, compare, and apply to schools, and pay for tuition. 
+                        While the College Board and Khan Academy offer students advice on how to succeed, 
+                        they do so with articles rather than interactive tools or visualizations for 
+                        students to make their own decisions. In response to these other tools, 
+                        the first iteration of our project aimed to fill a gap by providing students 
+                        the data to make informed decisions through an interactive visualization.
+                    </section>
+
+                    <section>
+                        <h4>DATA SET</h4>
+                        We found data sets from the National Center for Education Statistics (NCES), which 
+                        is a federally funded organization that collects and analyzes data related to 
+                        education in the United States. We initially decided to use the NCES Study of 1988, 
+                        a longitudinal study of about 17,000 eighth grade students over the course of more 
+                        than a decade.
+                    </section>  
+
+                    <section>
+                        <h4>INTERVIEWS &amp; PERSONAS</h4>
+                        We interviewed 7 students and developed 2 personas based on these individuals. 
+                        <ul>
+                            <li>
+                                <span style="font-weight:400;">Dustin</span> - Has a difficulty choosing a 
+                                major based on his interest in journalism or a major in engineering based 
+                                on job security?
+                            </li>
+                            <li>
+                                <span style="font-weight:400;">Rebecca</span> - Wants to find an academic  
+                                path that would best meet her interest in genetics, philanthropy, and making
+                                a positive impact on humanity?
+                            </li>
+                        </ul>
+                    </section> 
+
+                    <section>
+                        <h4>SKETCHES &amp; USER FEEDBACK</h4>
+                        <figure>
+                            <img src="../assets/datavis/sketch0.jpg" alt="Sketch" width="200">
+                            <img src="../assets/datavis/sketch1.png" alt="Sketch" width="290">
+                        </figure>
+                        Feedback on the sketches, and further probing revealed that students&#39; main concern 
+                        regarding postgraduate decision making was whether or not they would get a job. There 
+                        was also a lack of interest in data visualizations. Therefore, we pivoted our design 
+                        question and target users.
+                    </section>  
+                </section>
+
+                <section id="redefine">
+                    <h3><i class="material-icons">insert_chart</i>&nbsp;REDEFINING THE PROBLEM</h3>
+
+                    <section>
+                        <h4>DESIGN QUESTION</h4>
+                        How can data help college admissions counselors more effectively recruit and counsel 
+                        prospective students?
+                    </section>
+
+                    <section>
+                        <h4>TARGET USERS</h4>
+                        College admissions officers recruiting domestically in the United States
+                    </section>
+                </section>
+
+            </article>
+        </main>
+
+        <!-- The Modal -->
+        <div id="image-modal" class="modal">
+            <span id="modal-close" onclick="document.getElementById('image-modal').style.display='none'">&times;</span>
+            <img class="modal-content" id="enlarged-image">
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/menuselection.js"></script>
+    <script src="../js/imagepopup.js"></script>
+</html>
