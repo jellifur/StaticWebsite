@@ -8,6 +8,7 @@ figure img {
     position: fixed;
     z-index: 1;
     padding-top: 120px;
+    padding-bottom: 30px;
     width: 100%;
     height: 100%; 
     overflow: auto;
@@ -18,7 +19,7 @@ figure img {
 .modal-content {
     margin: auto;
     display: block;
-    width: 70%;
+    width: 65%;
     max-width: 700px;
     border-radius: 0;
 }
@@ -51,16 +52,12 @@ figure img {
     cursor: pointer;
 }
 
+/* Data Vis */
+#data-vis .modal-content { width: 50%; }
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content { width: 100%; }
-}
 
-@media only screen and (max-width: 600px){
-    #image-modal { padding-top: 150px; }
-
-    #modal-close { 
-        top: 70px; 
-        right: 35px;
-    }
+    #data-vis .modal-content { width: 100%; }
 }
