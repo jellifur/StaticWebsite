@@ -6,6 +6,7 @@ body {
 
 #about-me h1 {
   font-weight: 300;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
@@ -16,16 +17,12 @@ body {
   justify-content: center;
 }
 
-#about-me {
-	padding: 40px 55px;
-  font-weight: 400;
-  font-size: 25px;
-}
+#about-me { padding: 50px 55px; }
 
 #about-me article { 
   font-weight: 300;
   max-width: 700px;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 #nav-links {
@@ -34,6 +31,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 #about-me a { 
@@ -80,4 +78,11 @@ footer {
   font-weight: 300;
   font-size: 11px;
   color: #AD1457;
+}
+
+@media screen and (max-width: 700px) {
+  #about-me { padding: 40px 55px; }
+
+  #about-me article { font-size: 20px; }
+
 }
