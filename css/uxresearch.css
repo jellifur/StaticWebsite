@@ -1,11 +1,9 @@
-body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+#ux-projects {
   font-weight: 300;
   font-size: 15px;
-  background-color: #FAFAFA;
 }
 
-h1 {
+#ux-projects h1 {
     text-align: center;
     color: #AD1457;
     margin-bottom: 20px;
@@ -13,25 +11,11 @@ h1 {
     margin-top: 45px;
 }
 
-#home {
-    position: absolute;
-    color: #FFF;
-    background-color: #AD1457;
-    padding: 10px 15px;
-    top: 30px;
-}
-
-#home .material-icons { font-size: 30px; }
-
-#ux-projects {
+#projects-list {
   margin: 25px 40px;
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  justify-content: center;
   color: #FFF;
 }
 
@@ -60,7 +44,6 @@ h1 {
 }
 
 #ux-projects .ux-item {
-  width: 300px;
   height: 210px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +60,7 @@ h1 {
 #data-viz { background-image: url("../assets/data-viz.JPG"); }
 
 #ux-projects nav {
-  color: #27E693;
+  color: #FFFFA5;
   font-weight: 400;
   font-size: 19px;
   padding: 0 25px 20px 25px;
