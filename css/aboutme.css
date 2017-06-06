@@ -79,10 +79,6 @@ footer {
   font-weight: 300;
   font-size: 11px;
   color: #AD1457;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  position: absolute;
 }
 
 @media screen and (max-width: 700px) {
