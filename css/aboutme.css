@@ -15,6 +15,7 @@ body {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #about-me { padding: 50px 55px; }
@@ -78,6 +79,9 @@ footer {
   font-weight: 300;
   font-size: 11px;
   color: #AD1457;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
