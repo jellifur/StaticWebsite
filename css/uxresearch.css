@@ -1,6 +1,8 @@
 #ux-projects {
   font-weight: 300;
   font-size: 15px;
+  height:100vh; 
+  position:relative;
 }
 
 #ux-projects h1 {
@@ -8,7 +10,6 @@
     color: #AD1457;
     margin-bottom: 20px;
     font-weight: 400;
-    padding-top: 45px;
 }
 
 #projects-list {
