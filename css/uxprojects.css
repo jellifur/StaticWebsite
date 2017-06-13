@@ -108,7 +108,30 @@ tr:nth-child(even) { background-color: #FDF4F7; }
 
 #ux-project-container .font-weight-300 { font-weight: 300; }
 
-#ux-project-container figure img { padding-bottom: 4px; }
+#ux-project-container figure img { 
+    padding-bottom: 4px; 
+    cursor: pointer;
+}
+
+/** MODAL */
+#img-modal .close {
+    opacity: 0.9;
+    outline: none;
+}
+
+#img-modal .modal-dialog { 
+    background-color: #FAFAFA; 
+    padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog { 
+        margin: 45px auto; 
+        width: 80%;
+    }
+}
+
+/******************************/
 
 @media only screen and (max-width: 700px) {
     #nav-sections { display: none; }

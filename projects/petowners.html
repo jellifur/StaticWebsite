@@ -106,9 +106,9 @@
                         We created 3 personas ages 66, 77, and 82, with varying cognitive health, physical health, income, and 
                         technical abilities.
                         <figure>
-                            <img src="../assets/petowner/persona0.jpeg" alt="Persona Whiteboard" width="195">
-                            <img src="../assets/petowner/persona1.jpeg" alt="Persona Whiteboard" width="195">
-                            <img src="../assets/petowner/persona2.jpeg" alt="Persona Whiteboard" width="195">
+                            <img src="../assets/petowner/persona0.jpeg" alt="Persona Whiteboard" width="195" data-toggle="modal" data-target="#img-modal">
+                            <img src="../assets/petowner/persona1.jpeg" alt="Persona Whiteboard" width="195" data-toggle="modal" data-target="#img-modal">
+                            <img src="../assets/petowner/persona2.jpeg" alt="Persona Whiteboard" width="195" data-toggle="modal" data-target="#img-modal">
                         </figure>
                     </section>
 
@@ -135,15 +135,15 @@
                     <h3><i class="material-icons">pets</i>&nbsp;IDEATION</h3>
                     <section>
                         <h4>BRAINSTORM</h4>
-                        <figure><img src="../assets/petowner/brainstorm.jpeg" alt="Brainstorm Post-Its" width="595"></figure>
+                        <figure data-toggle="modal" data-target="#img-modal"><img src="../assets/petowner/brainstorm.jpeg" alt="Brainstorm Post-Its" width="595"></figure>
                     </section>
 
                     <section>
                         <h4>SKETCHES</h4>
                         <figure>
-                            <img src="../assets/petowner/sketch0.png" alt="Idea Sketch" width="195">
-                            <img src="../assets/petowner/sketch1.png" alt="Idea Sketch" width="195">
-                            <img src="../assets/petowner/sketch2.png" alt="Idea Sketch" width="195">
+                            <img src="../assets/petowner/sketch0.png" alt="Idea Sketch" width="195" data-toggle="modal" data-target="#img-modal">
+                            <img src="../assets/petowner/sketch1.png" alt="Idea Sketch" width="195" data-toggle="modal" data-target="#img-modal">
+                            <img src="../assets/petowner/sketch2.png" alt="Idea Sketch" width="195" data-toggle="modal" data-target="#img-modal">
                         </figure>
                     </section>
                 </section>
@@ -157,8 +157,8 @@
                         who would help with their pet needs for a small administrative fee. Volunteers are carefully vetted before 
                         they are allowed to be in the program.
                         <figure>
-                            <img src="../assets/petowner/lofi0.png" alt="Brainstorm Post-Its" width="290">
-                            <img src="../assets/petowner/lofi1.png" alt="Brainstorm Post-Its" width="290">
+                            <img src="../assets/petowner/lofi0.png" alt="Brainstorm Post-Its" width="290" data-toggle="modal" data-target="#img-modal">
+                            <img src="../assets/petowner/lofi1.png" alt="Brainstorm Post-Its" width="290" data-toggle="modal" data-target="#img-modal">
                         </figure>
                     </section>
 
@@ -183,14 +183,24 @@
             </article>
         </main>
 
-        <!-- The Modal -->
-        <div id="image-modal" class="modal">
-            <span id="modal-close" onclick="document.getElementById('image-modal').style.display='none'">&times;</span>
-            <img class="modal-content" id="enlarged-image">
+        <!-- Modal -->
+        <div id="img-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-header" style="border-bottom:none;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="material-icons" style="font-size:35px;">close</i>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding:0; text-align:center;">
+                    <img id="enlarged-image" style="width:80%;">
+                </div>
+            </div>
         </div>
+
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/menuselection.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/imagepopup.js"></script>
 </html>

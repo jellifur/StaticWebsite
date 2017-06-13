@@ -76,9 +76,9 @@
                         We created a workflow diagram to map out functionalities of Outlook, which would help us 
                         design our usability tasks.
                         <figure>
-                            <img src="../assets/email/workflow0.png" alt="App Workflow" width="195">
-                            <img src="../assets/email/workflow1.png" alt="App Workflow" width="195">
-                            <img src="../assets/email/workflow2.png" alt="App Workflow" width="195">
+                            <img src="../assets/email/workflow0.png" alt="App Workflow" width="195" data-toggle="modal" data-target="#img-modal">
+                            <img src="../assets/email/workflow1.png" alt="App Workflow" width="195" data-toggle="modal" data-target="#img-modal">
+                            <img src="../assets/email/workflow2.png" alt="App Workflow" width="195" data-toggle="modal" data-target="#img-modal">
                         </figure>
                     </section>
 
@@ -201,14 +201,24 @@
             </article>
         </main>
 
-        <!-- The Modal -->
-        <div id="image-modal" class="modal">
-            <span id="modal-close" onclick="document.getElementById('image-modal').style.display='none'">&times;</span>
-            <img class="modal-content" id="enlarged-image">
+        <!-- Modal -->
+        <div id="img-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-header" style="border-bottom:none;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="material-icons" style="font-size:35px;">close</i>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding:0; text-align:center;">
+                    <img id="enlarged-image" style="width:80%;">
+                </div>
+            </div>
         </div>
+
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/menuselection.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/imagepopup.js"></script>
 </html>

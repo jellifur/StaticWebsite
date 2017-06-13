@@ -9,7 +9,6 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
         <link rel="stylesheet" href="../css/uxprojects.css">
-        <link rel="stylesheet" href="../css/imagepopup.css">
         
         <title>Jenn Chan - Helping Challenged Pet Owning Seniors</title>
     </head>
@@ -103,8 +102,8 @@
                     <section>
                         <h4>SKETCHES &amp; USER FEEDBACK</h4>
                         <figure>
-                            <img src="../assets/datavis/sketch0.jpg" alt="Sketch" width="200">
-                            <img src="../assets/datavis/sketch1.png" alt="Sketch" width="290">
+                            <img src="../assets/datavis/sketch0.jpg" alt="Sketch" width="200" data-toggle="modal" data-target="#img-modal">
+                            <img src="../assets/datavis/sketch1.png" alt="Sketch" width="290" data-toggle="modal" data-target="#img-modal">
                         </figure>
                         Feedback on the sketches revealed that students&#39; main concern was whether or not 
                         they would get a job. There was also a lack of interest in data visualizations. 
@@ -149,8 +148,8 @@
                         We updated our data set to the more recent one, which contains 23,000 ninth graders from 944 
                         schools starting from 2009. We extracted 30 variables from the study for our graphs.
                         <figure>
-                            <img src="../assets/datavis/whiteboard0.jpg" alt="Sketch" width="290">
-                            <img src="../assets/datavis/whiteboard1.jpg" alt="Sketch" width="290">
+                            <img src="../assets/datavis/whiteboard0.jpg" alt="Sketch" width="290" data-toggle="modal" data-target="#img-modal">
+                            <img src="../assets/datavis/whiteboard1.jpg" alt="Sketch" width="290" data-toggle="modal" data-target="#img-modal">
                         </figure>
                     </section>
 
@@ -187,7 +186,7 @@
                     <section>
                         <h4>DATA VISUALIZATION TOOL</h4>
                         <div style="overflow:auto; padding-bottom:15px;">
-                            <figure style="float:left; padding-right:10px;">
+                            <figure style="float:left; padding-right:10px;" data-toggle="modal" data-target="#img-modal">
                                 <img src="../assets/datavis/vis0.png" alt="Final Data Visualization Tool" width="300">
                             </figure>
                             <figcaption>
@@ -196,7 +195,7 @@
                         </div>
 
                         <div style="overflow:auto; padding-bottom:15px;">
-                            <figure style="float:left; padding-right:10px;">
+                            <figure style="float:left; padding-right:10px;" data-toggle="modal" data-target="#img-modal">
                                 <img src="../assets/datavis/vis1.png" alt="Data Overview Dashboard" width="300">
                             </figure>
                             <figcaption>
@@ -209,7 +208,7 @@
                         </div>
 
                         <div style="overflow:auto; padding-bottom:15px;">
-                            <figure style="float:left; padding-right:10px;">
+                            <figure style="float:left; padding-right:10px;" data-toggle="modal" data-target="#img-modal">
                                 <img src="../assets/datavis/vis2.png" alt="High School Counseling" width="300">
                             </figure>
                             <figcaption>
@@ -221,7 +220,7 @@
                         </div>
 
                         <div style="overflow:auto; padding-bottom:15px;">
-                            <figure style="float:left; padding-right:10px;">
+                            <figure style="float:left; padding-right:10px;" data-toggle="modal" data-target="#img-modal"> 
                                 <img src="../assets/datavis/vis3.png" alt="School Preferences" width="300">
                             </figure>
                             <figcaption>
@@ -235,7 +234,7 @@
                         </div>
 
                         <div style="overflow:auto; padding-bottom:15px;">
-                            <figure style="float:left; padding-right:10px;">
+                            <figure style="float:left; padding-right:10px;" data-toggle="modal" data-target="#img-modal">
                                 <img src="../assets/datavis/vis4.png" alt="Programs and Majors" width="300">
                             </figure>
                             <figcaption>
@@ -248,7 +247,7 @@
                         </div>
 
                         <div style="overflow:auto; padding-bottom:15px;">
-                            <figure style="float:left; padding-right:10px;">
+                            <figure style="float:left; padding-right:10px;" data-toggle="modal" data-target="#img-modal">
                                 <img src="../assets/datavis/vis5.png" alt="Enrollment and Finances" width="300">
                             </figure>
                             <figcaption>
@@ -265,14 +264,24 @@
             </article>
         </main>
 
-        <!-- The Modal -->
-        <div id="image-modal" class="modal">
-            <span id="modal-close" onclick="document.getElementById('image-modal').style.display='none'">&times;</span>
-            <img class="modal-content" id="enlarged-image">
+        <!-- Modal -->
+        <div id="img-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-header" style="border-bottom:none;">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="material-icons" style="font-size:35px;">close</i>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding:0; text-align:center;">
+                    <img id="enlarged-image" style="width:80%;">
+                </div>
+            </div>
         </div>
+
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/menuselection.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/imagepopup.js"></script>
 </html>
