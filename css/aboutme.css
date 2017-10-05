@@ -1,3 +1,5 @@
+:root { font-size: 16px; }
+  
 body { 
   background-color: #FAFAFA;
   color: #FFF;
@@ -6,7 +8,7 @@ body {
 
 #about-me h1 {
   font-weight: 300;
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
@@ -22,8 +24,15 @@ body {
 
 #about-me article { 
   font-weight: 300;
-  max-width: 700px;
-  font-size: 23px;
+  max-width: 650px;
+  font-size: 1.4375rem;
+}
+
+#profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px;
 }
 
 #nav-links {
@@ -43,7 +52,7 @@ body {
 
 #nav-links .nav-link {
   border: 1px solid #FCE4EC;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-weight: 300;
   padding: 10px 15px;
   margin-top: 10px;
@@ -77,13 +86,13 @@ footer {
   padding: 15px;
   text-align: center;
   font-weight: 300;
-  font-size: 11px;
+  font-size: 0.6875rem;
   color: #AD1457;
 }
 
 @media screen and (max-width: 700px) {
   #about-me { padding: 40px 55px; }
 
-  #about-me article { font-size: 20px; }
+  #about-me article { font-size: 1.25rem; }
 
 }
