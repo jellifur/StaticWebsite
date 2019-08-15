@@ -1,3 +1,3 @@
 My personal website & portfolio.
 
-Always and forever under construction...
+Always a working progress.
