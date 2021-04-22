@@ -51,7 +51,8 @@ body {
 }
 
 #nav-links .nav-link {
-  border: 1px solid #FCE4EC;
+  border: 1px solid #FDEBAD;
+  color: #FDEBAD;
   font-size: 1.1875rem;
   font-weight: 300;
   padding: 10px 15px;
@@ -60,8 +61,8 @@ body {
 }
 
 #nav-links .nav-link:hover {
-  background-color: #FCE4EC;
-  color: #AD1457;
+  background-color: #FDEBAD;
+  color: #70612B;
 }
 
 #about-me nav a:hover { text-decoration: inherit; }
@@ -87,7 +88,7 @@ footer {
   text-align: center;
   font-weight: 300;
   font-size: 0.6875rem;
-  color: #AD1457;
+  color: #0A96A3;
 }
 
 @media screen and (max-width: 700px) {

@@ -8,7 +8,7 @@ body {
 /* NAV BAR */
 
 nav {
-    background-color: #AD1457;
+    background-color: #0A96A3;
     color: #FFF;
     padding: 10px 35px;
     position: fixed;
@@ -42,8 +42,8 @@ nav a {
 
 #nav-sections a:hover,
 #nav-sections .active a {
-    text-decoration: underline;
-    color: #FCE4EC;
+    text-decoration: none;
+    color: #FDEBAD;
 }
 
 nav a:hover { 
@@ -57,18 +57,18 @@ nav a:focus {
     text-decoration: none; 
 }
 
-#ux-research:hover { color: #FCE4EC; }
+#ux-research:hover { color: #FDEBAD; }
 
 /******************************/
 
 h2 { 
-    color: #AD1457; 
+    color: #0A96A3; 
     font-weight: 300;
     margin-bottom: 5px;
 }
 
 h3 {
-    color: #AD1457; 
+    color: #0A96A3; 
     font-weight: 300;
     display: flex;
 }
@@ -79,11 +79,11 @@ img {
 }
 
 td, th {
-    border: 1px solid #FCE4EC;
+    border: 1px solid #B8C2C2;
     padding: 8px;
 }
 
-tr:nth-child(even) { background-color: #FDF4F7; }
+tr:nth-child(even) { background-color: #F1FFFF; }
 
 #ux-project-container {  
     display: -ms-flex;
@@ -97,6 +97,10 @@ tr:nth-child(even) { background-color: #FDF4F7; }
 #ux-project-container header {
     margin-bottom:30px;
     text-align: center;
+}
+
+#ux-project-container a:hover {
+    text-decoration: none;
 }
 
 #ux-project-container section { margin-bottom: 25px; }
